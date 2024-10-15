@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_IP"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="IP (172.20.10.5)"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/input_port"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_below="@+id/input_IP"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toStartOf="@+id/button_connect"
+                android:layout_toLeftOf="@+id/button_connect"
+                android:ems="10"
+                android:hint="Port (502)"
+                android:inputType="number" />
+
+            <!-- <EditText
+                 android:id="@+id/input_slave_address"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:layout_below="@+id/input_port"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentLeft="true"
+                 android:hint="从站地址 (默认为1)"
+                 android:inputType="number" />-->
+
+            <Button
+                android:id="@+id/button_select_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_port"
+                android:layout_alignParentStart="true"
+                android:text="选择配置文件" />
+
+
+            <Spinner
+                android:id="@+id/spinner_dataType"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/button_select_file"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="spinner_Description"
+                android:spinnerMode="dialog" />
+
+            <Button
+                android:id="@+id/button_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_IP"
+                android:layout_toStartOf="@+id/button_disconnect"
+                android:layout_toLeftOf="@+id/button_disconnect"
+                android:text="连接" />
+
+            <Button
+                android:id="@+id/button_disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_IP"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="断开" />
+
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup_RW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_dataType"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:checkedButton="@+id/button_disconnect"
+                android:orientation="horizontal">
+
+
+                <!-- <RadioButton
+                     android:id="@+id/radio_readMB"
+                     android:layout_width="wrap_content"
+                     android:layout_height="48dp"
+                     android:layout_weight="1"
+                     android:text="读取" />
+
+                 <RadioButton
+                     android:id="@+id/radio_writeMB"
+                     android:layout_width="wrap_content"
+                     android:layout_height="48dp"
+                     android:layout_weight="1"
+                     android:text="写入" />
+ -->
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/input_offset"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_below="@+id/radioGroup_RW"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:ems="9"
+                android:hint="起始地址"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/input_bit"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_below="@+id/radioGroup_RW"
+                android:layout_toEndOf="@+id/input_offset"
+                android:layout_toRightOf="@+id/input_offset"
+                android:ems="9"
+                android:hint="读取位数"
+                android:inputType="number" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_offset"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/input_decimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="写入值"
+                    android:inputType="numberDecimal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/button_readMB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="读取" />
+
+                    <Button
+                        android:id="@+id/button_writeMB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:text="写入" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/text_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:hint="接收区域"
+                    android:textSize="30sp"
+
+                    app:layout_anchorGravity="center_vertical|center_horizontal" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
