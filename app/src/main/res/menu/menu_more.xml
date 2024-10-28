@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_more_option1"
+        android:title="替换配置文件" />
+    <item
+        android:id="@+id/action_more_option2"
+        android:title="恢复配置文件" />
+
+    <item
+        android:id="@+id/action_more_option3"
+        android:title="查看日志内容记录" />
+</menu>

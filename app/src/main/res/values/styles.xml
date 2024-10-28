@@ -1,0 +1,24 @@
+<resources>
+    <!--自定义Toolbar样式-->
+    <style name="CustomToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:textColor">@color/blue0075F6</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/alihyaihei</item> <!-- 使用你的字体 -->
+    </style>
+
+
+    <style name="puhuiti_bold" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/alibaba_puhuiti_bold</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="pingfang_bold" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/pingfangregular</item>
+        <item name="android:textColor">#FF000000</item><!--黑色#FF000000-->
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">0.5dp</item>
+    </style>
+</resources>

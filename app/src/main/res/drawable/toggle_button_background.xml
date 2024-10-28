@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@color/ltgray989999">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/> <!-- 设置圆角半径 -->
+            <solid android:color="@color/ltgray989999"/> <!-- 按钮被选中的颜色 -->
+        </shape>
+    </item> <!-- 选中状态的颜色 -->
+    <item android:state_checked="false" android:drawable="@color/green" >
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/> <!-- 设置圆角半径 -->
+            <solid android:color="@color/green"/> <!-- 按钮未选中的颜色 -->
+        </shape>
+    </item> <!-- 未选中状态的颜色 -->
+    <item android:drawable="@android:color/transparent" /> <!-- 默认背景为透明 -->
+
+</selector>

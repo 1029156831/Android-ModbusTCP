@@ -5,5 +5,19 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.ModbusTCP_JlibModbus" parent="Base.Theme.ModbusTCP_JlibModbus" />
+    <style name="Theme.ModbusTCP_JlibModbus" parent="Base.Theme.ModbusTCP_JlibModbus" >
+        <item name="colorPrimary">@color/blue0075F6</item>   <!-- 修改主色 -->
+        <item name="colorPrimaryDark">@color/ltgrayF3F4F6</item>  <!-- 修改深色主色 -->
+        <item name="android:textCursorDrawable">@android:color/black</item><!-- 修改光标颜色 -->
+
+<!--        <item name="colorControlNormal">@android:color/white</item>&lt;!&ndash; 修改控件颜色 &ndash;&gt;-->
+<!--        <item name="colorControlActivated">@android:color/white</item>&lt;!&ndash; 修改控件激活颜色 &ndash;&gt;-->
+
+
+
+    </style>
+    <!-- 添加 TextView 自定义样式 -->
+    <style name="CustomTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/edittext_background</item> <!-- 设置背景 -->
+    </style>
 </resources>

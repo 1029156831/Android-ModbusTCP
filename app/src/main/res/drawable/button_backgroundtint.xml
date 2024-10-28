@@ -1,0 +1,15 @@
+<?xml version="1.1" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/> <!-- 圆角 -->
+            <solid android:color="@color/gray"/> <!-- 按钮不可用时的颜色 -->
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/> <!-- 圆角 -->
+            <solid android:color="@color/blue0075F6"/> <!-- 按钮可用时的颜色 -->
+        </shape>
+    </item>
+</selector>

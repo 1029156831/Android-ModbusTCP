@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+
     <color name="white">#FFFFFFFF</color>
+    <color name="whitedEF0FA">#def0fa</color>
+
+    <color name="green">#40de5a</color> <!-- 明亮的绿色：00FF00 -->
+    <color name="green00bc12">#00bc12</color> <!-- 油绿色 -->
+    <color name="green2bae85">#2bae85</color>
+
+    <color name="gray">#E5E5E5</color><!-- 灰色 标准：#FF808080-->
+    <color name="ltgray">#D3D3D3</color><!-- 灰色 -->
+    <color name="ltgrayF3F4F6">#F3F4F6</color>
+    <color name="ltgrayE5E5E5">#E5E5E5</color>
+    <color name="ltgray989999">#989999</color>
+
+    <color name="red">#FFFF0000</color>
+
+    <color name="blue">#FF0000FF</color>
+    <color name="blue003F98">#003F98</color>
+    <color name="blue1D50A2">#1D50A2</color>
+    <color name="blue144CEF6">#44CEF6</color>
+    <color name="blue003472">#003472</color>
+    <color name="blue0484f9">#0484f9</color>
+    <color name="blue0075F6">#0075F6</color>
+
+    <color name="whiteF4F8FB">#F4F8FB</color>
+
 </resources>

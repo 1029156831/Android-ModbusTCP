@@ -1,196 +1,294 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/whiteF4F8FB">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextAppearance="@style/CustomToolbar"
+        app:title="电气系统故障诊断工具"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/Theme.Design.Light" />
 
     <ScrollView
-
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:scrollbarStyle="insideInset"
-        android:scrollbars="vertical">
+        android:scrollbars="vertical"
+        android:backgroundTint="@color/whiteF4F8FB">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/input_IP"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
+            <TextView
+                android:id="@+id/communication_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通信地址"
+                android:textSize="12sp"
+                android:textColor="@color/ltgray989999"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:ems="10"
-                android:hint="IP (172.20.10.5)"
-                android:inputType="text" />
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                style="@style/puhuiti_bold"/>
 
-            <EditText
-                android:id="@+id/input_port"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_below="@+id/input_IP"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_toStartOf="@+id/button_connect"
-                android:layout_toLeftOf="@+id/button_connect"
-                android:ems="10"
-                android:hint="Port (502)"
-                android:inputType="number" />
-
-            <!-- <EditText
-                 android:id="@+id/input_slave_address"
-                 android:layout_width="match_parent"
-                 android:layout_height="48dp"
-                 android:layout_below="@+id/input_port"
-                 android:layout_alignParentStart="true"
-                 android:layout_alignParentLeft="true"
-                 android:hint="从站地址 (默认为1)"
-                 android:inputType="number" />-->
-
-            <Button
-                android:id="@+id/button_select_file"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/input_port"
-                android:layout_alignParentStart="true"
-                android:text="选择配置文件" />
-
-
-            <Spinner
-                android:id="@+id/spinner_dataType"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_below="@+id/button_select_file"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:contentDescription="spinner_Description"
-                android:spinnerMode="dialog" />
-
-            <Button
-                android:id="@+id/button_connect"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/input_IP"
-                android:layout_toStartOf="@+id/button_disconnect"
-                android:layout_toLeftOf="@+id/button_disconnect"
-                android:text="连接" />
-
-            <Button
-                android:id="@+id/button_disconnect"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/input_IP"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:text="断开" />
-
-
-
-            <RadioGroup
-                android:id="@+id/radioGroup_RW"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_below="@+id/communication_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/spinner_dataType"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:checkedButton="@+id/button_disconnect"
-                android:orientation="horizontal">
-
-
-                <!-- <RadioButton
-                     android:id="@+id/radio_readMB"
-                     android:layout_width="wrap_content"
-                     android:layout_height="48dp"
-                     android:layout_weight="1"
-                     android:text="读取" />
-
-                 <RadioButton
-                     android:id="@+id/radio_writeMB"
-                     android:layout_width="wrap_content"
-                     android:layout_height="48dp"
-                     android:layout_weight="1"
-                     android:text="写入" />
- -->
-            </RadioGroup>
-
-            <EditText
-                android:id="@+id/input_offset"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_below="@+id/radioGroup_RW"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:ems="9"
-                android:hint="起始地址"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/input_bit"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_below="@+id/radioGroup_RW"
-                android:layout_toEndOf="@+id/input_offset"
-                android:layout_toRightOf="@+id/input_offset"
-                android:ems="9"
-                android:hint="读取位数"
-                android:inputType="number" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/input_offset"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:orientation="vertical">
-
-                <EditText
-                    android:id="@+id/input_decimal"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="写入值"
-                    android:inputType="numberDecimal" />
-
+                app:cardCornerRadius="16dp"
+                app:cardElevation="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
 
                 <LinearLayout
+                    android:id="@+id/linearLayout_IP"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <Button
-                        android:id="@+id/button_readMB"
-                        android:layout_width="wrap_content"
-                        android:layout_height="48dp"
-                        android:layout_weight="1"
-                        android:text="读取" />
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="@color/whiteF4F8FB">
 
-                    <Button
-                        android:id="@+id/button_writeMB"
+
+                    <TextView
                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IP："
+                        android:layout_gravity="center_vertical"
+                        android:textSize="18sp"
+                        style="@style/puhuiti_bold"/>
+
+                    <EditText
+                        android:id="@+id/input_IP"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="2.5"
+                        android:hint="172.20.10.5"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        style="@style/puhuiti_bold"/>
+
+                    <!--                android:textCursorDrawable="@drawable/cursor_color"-->
+                    <!--                android:background="@drawable/edittext_background"-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="端口："
+                        android:layout_gravity="center_vertical"
+                        android:textSize="18sp"
+                        style="@style/puhuiti_bold"/>
+
+                    <EditText
+                        android:id="@+id/input_port"
+                        android:layout_width="0dp"
                         android:layout_height="48dp"
                         android:layout_weight="1"
-                        android:text="写入" />
+                        android:hint="502"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        tools:ignore="TouchTargetSizeCheck"
+                        style="@style/puhuiti_bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="从站地址："
+                        android:layout_gravity="center_vertical"
+                        android:textSize="18sp"
+                        style="@style/puhuiti_bold"/>
+
+                    <EditText
+                        android:id="@+id/input_slave_address"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:hint="1"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        tools:ignore="TouchTargetSizeCheck"
+                        style="@style/puhuiti_bold"/>
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
+            <LinearLayout
+                android:id="@+id/linearLayout_port"
+                android:layout_below="@id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@color/whiteF4F8FB">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/button_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="连接"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/blue0075F6"
+                    style="@style/puhuiti_bold"/>
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/button_disconnect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="断开"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/blue0075F6"
+                    android:layout_weight="1"
+                    style="@style/puhuiti_bold"/>
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/button_start_readMB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 开始读取"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/blue0075F6"
+                    android:drawableLeft="@drawable/start"
+                    android:layout_weight="1"
+                    style="@style/puhuiti_bold"/>
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/button_stop_readMB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="停止读取"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/blue0075F6"
+                    android:drawableLeft="@drawable/stop"
+                    android:layout_weight="1"
+                    style="@style/puhuiti_bold"/>
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linearLayout_button"-->
+<!--                android:layout_below="@id/linearLayout_port"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="8dp">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/button_change_configuration"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="替换配置文件" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/button_restore_configuration"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="恢复配置文件" />-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/linearLayout_data_display"
+                android:layout_below="@id/linearLayout_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/whiteF4F8FB"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_vertical">
 
                 <TextView
-                    android:id="@+id/text_result"
-                    android:layout_width="match_parent"
+                    android:id="@+id/data_display_label"
+                    android:layout_below="@id/linearLayout_port"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_weight="1"
-                    android:hint="接收区域"
-                    android:textSize="30sp"
+                    android:textSize="12sp"
+                    android:text="数据展示区域"
+                    android:textColor="@color/ltgray989999"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"
+                    style="@style/puhuiti_bold"
+                    android:layout_gravity="center_vertical"/>
 
-                    app:layout_anchorGravity="center_vertical|center_horizontal" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_data_display_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical">
+
+                        <ImageButton
+                            android:id="@+id/imagebutton_clean"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="0dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/clean"
+                            tools:ignore="TouchTargetSizeCheck"
+                            android:contentDescription="清除数据"/>
+                        <!-- 输入框 -->
+
+                        <EditText
+                            android:id="@+id/search_input"
+                            style="@style/puhuiti_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentStart="true"
+                            android:hint="输入搜索功能名称"
+                            android:textSize="10sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <ImageButton
+                            android:id="@+id/imagebutton_select"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/select"
+                            tools:ignore="TouchTargetSizeCheck"
+                            android:contentDescription="选择图标" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_below="@id/linearLayout_data_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edittext_background">
+        </LinearLayout>
+
         </RelativeLayout>
     </ScrollView>
 
