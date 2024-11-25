@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_wycgqsjbd"
+                    style="@style/puhuiti_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="位移传感器数据标定"
+                    android:textColor="@color/ltgray989999"
+                    android:textSize="12sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_wycgqsjbd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_wycgqsjbd"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="40dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_hzcgq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_hzcgqysz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="回转传感器原始数据："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_hzcgqysz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:tag="回转传感器原始数据" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_hzcgqmmz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="回转传感器毫米值："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_hzcgqmmz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="2"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:tag="回转传感器毫米值" />
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="mm"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_hzcgqzxz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="标定回转最小值："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_hzcgqzxz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="标定回转传感器最小值"/>
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_hzcgqzxz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="标定回转传感器最小值"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_hzcgqzdz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="回转传感器最大值："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_hzcgqzdz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="标定回转传感器最大值" />
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_hzcgqzdz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="标定回转传感器最大值"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_hzcgqzdxc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="回转油缸行程："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_hzcgqzdxc"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="回转油缸行程" />
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="mm"
+                                    android:textSize="18sp" />
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_hzcgqzdxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="回转油缸行程"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@android:color/darker_gray" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sjcgqysz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="升降传感器原始数据："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_sjcgqysz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:tag="升降传感器原始数据" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sjcgqmmz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="升降传感器毫米值："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_sjcgqmmz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:tag="升降传感器毫米值" />
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="mm"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sjcgqzxz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="升降传感器最小值："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_sjcgqzxz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="标定升降传感器最小值" />
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_sjcgqzxz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="标定升降传感器最小值"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sjcgqzdz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="升降传感器最大值："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_sjcgqzdz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="标定升降传感器最大值" />
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_sjcgqzdz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="标定升降传感器最大值"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sjcgqzdxc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="升降油缸行程："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_sjcgqzdxc"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="升降油缸行程" />
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="mm"
+                                    android:textSize="18sp" />
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_sjcgqzdxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="升降油缸行程"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@android:color/darker_gray" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sscgqysz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="伸缩传感器原始数据："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_sscgqysz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:tag="伸缩传感器原始数据" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sscgqmmz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="伸缩传感器毫米值："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textview_sscgqmmz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:tag="伸缩传感器毫米值" />
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="mm"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sscgqzxz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="伸缩传感器最小值："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_sscgqzxz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="标定伸缩传感器最小值" />
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_sscgqzxz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="标定伸缩传感器最小值"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sscgqzdz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="伸缩传感器最大值："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_sscgqzdz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="标定伸缩传感器最大值"/>
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_sscgqzdz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="标定伸缩传感器最大值"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sscgqzdxc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="伸缩油缸行程："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_sscgqzdxc"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="伸缩油缸行程" />
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="mm"
+                                    android:textSize="18sp" />
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_sscgqzdxc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="伸缩油缸行程"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView_jyjgjzsj"
+                    style="@style/puhuiti_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="记忆截割居中数据"
+                    android:textColor="@color/ltgray989999"
+                    android:textSize="12sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_jyjgjzsj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_jyjgjzsj"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="40dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout_jyjgjzsj"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_hzjzz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="回转居中值："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_hzjzz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="记忆截割回转居中值" />
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_hzjzz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="记忆截割回转居中值"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_sjjzz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="升降居中值："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_sjjzz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="记忆截割升降居中值" />
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_sjjzz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="记忆截割升降居中值"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_ssjzz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="伸缩居中值："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_ssjzz"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="记忆截割伸缩居中值" />
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_ssjzz"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="记忆截割伸缩居中值"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_zdjzwzqr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="自动居中："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_zdjzwzqr"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="0"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="自动居中位置确认" />
+
+                                <ToggleButton
+                                    android:id="@+id/toggleButton_zdjzwzqr"
+                                    style="@style/puhuiti_bold"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/gray"
+                                    android:tag="自动居中位置确认"
+                                    android:textColor="@android:color/white"
+                                    android:textOn="ON"
+                                    android:textOff="OFF"
+                                    android:checked="false" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView_ldsz"
+                    style="@style/puhuiti_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="设置居中速度"
+                    android:textColor="@color/ltgray989999"
+                    android:textSize="12sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_ldsz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_ldsz"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="40dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:id="@+id/linearLayout_ldsz"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_xlll"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="星轮流量："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textView_xlll"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="星轮流量" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_yyll"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="一运流量："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textView_yyll"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="一运流量" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_zldyl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="左履带压力："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textView_zldyl"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="左履带压力" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_yldyl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="右履带压力："
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/textView_yldyl"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="右履带压力" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_zdjzsd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="自动居中速度："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_zdjzsd"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="自动居中速度" />
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_zdjzsd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="自动居中速度"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView_zzjgsdsd"
+                    style="@style/puhuiti_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="自主截割速度设定"
+                    android:textColor="@color/ltgray989999"
+                    android:textSize="12sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_zzjgsdsd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_ldsz"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="40dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/linearLayout_zzjgsdsd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_zzjgsjsd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="自主截割升降速度："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_zzjgsjsd"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="自主截割升降速度" />
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_zzjgsjsd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="自主截割升降速度"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_zzjghzsd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="自主截割回转速度："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_zzjghzsd"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="自主截割回转速度" />
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_zzjghzsd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="自主截割回转速度"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_zzjgsssd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="自主截割伸缩速度："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_zzjgsssd"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="自主截割伸缩速度" />
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_zzjgsssd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="自主截割伸缩速度"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView_jyjgsdsd"
+                    style="@style/puhuiti_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="记忆截割速度设定"
+                    android:textColor="@color/ltgray989999"
+                    android:textSize="12sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_jyjgsdsd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_ldsz"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="40dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/linearLayout_jyjgsdsd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_jyjgsjsd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="记忆截割升降速度："
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/editText_jyjgsjsd"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="记忆截割升降速度" />
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_jyjgsjsd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="记忆截割升降速度"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_jyjghzsd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="记忆截割回转速度："
+                                    android:textSize="18sp" />
+                                <EditText
+                                    android:id="@+id/editText_jyjghzsd"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="记忆截割回转速度" />
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_jyjghzsd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="记忆截割回转速度"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout_jyjgsssd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="记忆截割伸缩速度："
+                                    android:textSize="18sp" />
+                                <EditText
+                                    android:id="@+id/editText_jyjgsssd"
+                                    style="@style/pingfang_bold"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2.5"
+                                    android:hint="00000"
+                                    android:inputType="text"
+                                    android:padding="8dp"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:tag="记忆截割伸缩速度" />
+
+                                <info.hoang8f.widget.FButton
+                                    android:id="@+id/button_jyjgsssd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="8dp"
+                                    android:text="编辑"
+                                    android:backgroundTint="@color/green00bc12"
+                                    android:textAppearance="@style/pingfang_bold"
+                                    android:tag="记忆截割伸缩速度"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="掘进机调试工具选择"
+
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        style="@style/login_title"/>
+
+    <Button
+        android:id="@+id/button_fault_diagnosis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="电气系统故障诊断工具"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/blue0075F6"
+        style="@style/puhuiti_bold"
+        />
+
+    <Button
+        android:id="@+id/button_engineering_mode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="掘进机工厂调试模式"
+        app:layout_constraintTop_toBottomOf="@id/button_fault_diagnosis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/whiteF4F8FB"
+        android:backgroundTint="@color/green00bc12"
+        style="@style/puhuiti_bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
